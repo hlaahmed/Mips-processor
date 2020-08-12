@@ -28,7 +28,7 @@ begin
     when "00" => b <= a1 ;
     when "01" => b <= a2 ;
     when "10" => b <= a3 ;
-    when others => b <= a4 ;
+    when others => b <= a4;
   end case;
   
 end process p_mux;
