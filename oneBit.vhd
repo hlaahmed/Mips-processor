@@ -30,7 +30,7 @@ begin
 m1 : mult2 port map( ALUop(3) , A , not(A) , tmpA);
 m2 : mult2 port map( ALUop(2) , B , not(B) , tmpB);
 FullAdder : FA port map( tmpA , tmpB , Cin, s,c);
-m4 : mult4 port map( (tmpA and tmpB), (tmpA or tmpB) , s, '0', ALUop(1 downto 0),res);
+m4 : mult4 port map( (tmpA and tmpB), (tmpA or tmpB) , s, '0', ALUop(1 downto 0),res) ;
 
 carry  <= c;
 
