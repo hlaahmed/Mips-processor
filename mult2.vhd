@@ -21,4 +21,4 @@ end mult2;
 architecture Behavioral of mult2 is
 begin
     X <= A when (SEL = '0') else B;
-end Behavioral;
+end Behavioral ;
