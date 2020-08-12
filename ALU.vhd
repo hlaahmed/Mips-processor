@@ -30,7 +30,7 @@ port(
   a4      : in  std_logic;
   sel     : in  std_logic_vector(1 downto 0);
   b       : out std_logic);
- end component;
+ end component ;
  
 -- type <new_type> is
 --  record
