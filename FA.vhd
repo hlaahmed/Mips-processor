@@ -30,7 +30,7 @@ begin
   w_WIRE_2 <= w_WIRE_1 and i_carry;
   w_WIRE_3 <= i_bit1 and i_bit2;
  
-  o_sum   <= w_WIRE_1 xor i_carry;
+  o_sum   <= w_WIRE_1 xor i_carry ;
   o_carry <= w_WIRE_2 or w_WIRE_3;
  
  
