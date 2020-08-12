@@ -20,5 +20,5 @@ end component ;
 
 
 
-end onebitalu;
+end onebitalu ;
 
