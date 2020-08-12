@@ -26,7 +26,7 @@ architecture Behavioral of ALU32 is
 signal C : std_logic_vector (31 downto 0); 
 signal tempres : std_logic_vector (31 downto 0);
 begin
- ALU1 : OneBit port map ( A(0) , B(0) , CIn , ALUop(3 downto 0) , tempres(0) , C(0));
+ ALU1 : OneBit port map ( A(0) , B(0) , CIn , ALUop(3 downto 0) , tempres(0) , C(0)) ;
  ALU2 : OneBit port map ( A(1) , B(1) , C(0) , ALUop(3 downto 0) , tempres(1) , C(1));
  ALU3 : OneBit port map ( A(2) , B(2) , C(1) , ALUop(3 downto 0) , tempres(2) , C(2));
  ALU4 : OneBit port map ( A(3) , B(3) , C(2) , ALUop(3 downto 0) , tempres(3) , C(3));
